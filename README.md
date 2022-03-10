@@ -1,1 +1,2 @@
 # Platzi 
+Esta página busca complementar lo aprendido en el curso definitivo de CSS y HTML encontrado en Platzi. Además de ciertos apuntes, tips o cualquier cosa que pueda ayudarte a entender mejor lo que estamos aprendiendo.
