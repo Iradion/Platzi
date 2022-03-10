@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Índice:</h1>
+        <ul>
+          <a href="#anatomia"><li>Anatomía del layout.</li></a>
+          <a href="#etiquetas"><li>Etiquetas.</li></a>
+          <a href="#imagenes"><li>Imágenes.</li></a>
+          <a href="#formularios"><li>Formularios.</li></a>
+        </ul>
+      </section>
+      <section>
+        <h1>HTML</h1>
+        <a name="anatomia"></a>
+        <h2>Anatomía del layout o maquetación semántica HTML.</h2>
+        <h3>¿Qué es un Layout o maquetación?</h3>
+        <p>
+          Estructuración del documento en el cual van dentro sus respectivas
+          etiquetas. En adición, una maquetación semántica es la que se hace de
+          forma ordenada, limpia y con buenas prácticas, lo cual hace que
+          nuestro contenido sea mas legible y sea mejor indexado por los
+          buscadores web.
+        </p>
+        <p>
+          Hint: Indexar significa el listado de páginas que arroja un buscador
+          web como Google. Si nuestra página esta bien maquetada, es más facil
+          para estos buscadores leer nuestra página, lo que facilita que salga
+          en los resultados de estos buscadores.
+        </p>
+        <dl>
+          <dt>Header:</dt>
+          <dd>
+            Encabezado de la página, donde va el logo y botones de navegación.
+          </dd>
+          <dt>Main:</dt>
+          <dd>Zona del contenido principal.</dd>
+          <dt>Sidebar:</dt>
+          <dd>Contenido de barra lateral</dd>
+          <dt>Footer:</dt>
+          <dd>
+            Zona final de una página, normalmente es donde va información de
+            contacto, etc...
+          </dd>
+        </dl>
+        <figure>
+          <img src="./img/anatomiaweb.png" alt="anatomiaweb" />
+        </figure>
+        <!-- Idea: dejar una captura de mi página usandola como ejemplo de anatomia de HTML. -->
+      </section>
+      <section>
+        <a name="etiquetas"></a>
+        <h2>Etiquetas.</h2>
+        <h3>¿Qué es una etiqueta?</h3>
+        <p>
+          Una etiqueta es un codigo que se le da al texto, este codigo es el que
+          lee y renderiza nuestro navegador al abrir nuestra página. Dependiendo
+          el texto, es nuestro trabajo agregarlo su respectiva etiqueta.
+        </p>
+        <p>
+          Hint: El renderizado de una página se refiere a plasmar en pantalla la
+          información que estamos escribiendo.
+        </p>
+        <p>
+          Ejemplo con la etiqueta "p" para un parrafo: &lt;p&gt; Soy un parrafo
+          &lt;/p&gt;
+        </p>
+        <h3>Estructura de una etiqueta</h3>
+        <dl>
+          <dt>Etiqueta de inicio:</dt>
+          <dd>Es la que abre el codigo del texto</dd>
+          <dt>Atributo:</dt>
+          <dd>
+            Ajusta el comportamiento del texto para cumplir el criterio del
+            usuario.
+          </dd>
+          <dt>Valor:</dt>
+          <dd>
+            Atributo y valor van de la mano, basicamente sirve para darle un
+            comportamiento mas especifico a nuestra etiqueta, ya que dentro de
+            un solo atributo pueden existir muchos valores que dar.
+          </dd>
+          <dt>Contenido:</dt>
+          <dd>
+            El texto en sí, en caso de que lo lleve, no todas las etiquetas
+            llevan contenido.
+          </dd>
+          <dt>Etiqueta de cierre:</dt>
+          <dd>Marca el final de nuestra etiqueta.</dd>
+          <dt>Elemento</dt>
+          <dd>
+            La etiqueta en sí, desde principio a fin, incluyendo atributos,
+            valor, contenido, etc...
+          </dd>
+        </dl>
+        <figure>
+          <img src="./img/etiquetaest.png" alt="estructura de una etiqueta" />
+        </figure>
+        <h3>Tipos de elementos en etiquetas:</h3>
+        <dl>
+          <dt>Block:</dt>
+          <dd>
+            Un elemento en bloque ocupa todo el espacio de su elemento padre
+            (contenedor), creando así un "bloque".
+          </dd>
+          <figure>
+            <img src="./img/ejemploblock.png" alt="Ejemplo elemento block" />
+            <img src="./img/ejemploblock2.png" alt="Ejemlpo elemento block" />
+          </figure>
+          <dt>Inline:</dt>
+          <dd>
+            Un elemento en línea ocupa sólo el espacio delimitado por las
+            etiquetas que definen el elemento en línea.
+          </dd>
+          <figure>
+            <img src="./img/ejemploinline.png" alt="Ejemplo elemento inline" />
+            <img src="./img/ejemploinline2.png" alt="Ejemplo elemento inline" />
+          </figure>
+        </dl>
+      </section>
+      <section>
+        <a name="imagenes"></a>
+        <h2>Imágenes:</h2>
+        <dl>
+          <dt>Lossless:</dt>
+          <dd>
+            No tendrá ninguna pérdida al intentar comprimirla. Mejores usos:
+            GIF, PNG 8 (logos). PNG 24 (fotografías sin fondo). GIF y PNG 8
+            están limitados a 256 colores, por eso es que su peso es bajo. PNG
+            24 uso de colores prácticamente ilimitada, pero pesa más
+          </dd>
+          <dt>Lossy:</dt>
+          <dd>
+            Tienen perdida al comprimirlas. Mejores usos: para fotografías
+            completas. JPG / JPEG Pierde calidad al comprimir pero se pierde
+            peso, lo que beneficia al rendimiento de nuestra web.
+          </dd>
+          <dt>SVG - Vector/Lossless:</dt>
+          <dd>
+            Tipo de formato especial generado con programas de edición de
+            imágenes, muy ligero, diseñado especialmente para pantallas de
+            retina, las cuales permiten que las imágenes puedan escalar sin
+            perder calidad. Mejores usos: Iconos, webs que vayan a usarse en
+            diferentes tamaños de pantalla. (no pierde calidad al reescalar al
+            nuevo formato de pantalla).
+          </dd>
+        </dl>
+        <figure>
+          <img src="./img/tablaimg.png" alt="tabla de imagenes" />
+        </figure>
+      </section>
+      <section>
+        <a name="formularios"></a>
+        <h2>Formularios:</h2>
+        <p>
+          Un formulario HTML es una sección de un documento que contiene
+          contenido normal, código, elementos especiales llamados controles
+          (casillas de verificación (checkboxes), radiobotones (radio buttons),
+          menúes, etc.), y rótulos (labels) en esos controles.
+        </p>
+        <p>
+          Usos sugeridos: Para aumentar el area de click, puedes usar la
+          etiqueta &lt;label&gt;, esto hará que al dar click sobre el contenido
+          de esta etiqueta, la casilla se marque. Conveniente para personas con
+          baja capacidad visual.
+        </p>
+        <p>Ejemplo:</p>
+        <form action="">
+          <label for="ejemplo1">Texto que aplica cambios.</label>
+          <input type="radio" id="ejemplo1" name="ejemplo1" />
+          <span> que no aplica cambios:</span
+          ><input type="radio" id="ejemplo2" name="ejemplo1" />
+        </form>
+      </section>
+      <section>
+        <h2>Anclas:</h2>
+        <p>
+          Vínculos que al ser presionados te llevan a cierta sección de la
+          página o de otras páginas.
+        </p>
+        <p>Ejemplo en misma página:</p>
+        <figure>
+          <img src="./img/ejemploancla1.png" alt="Ejemplo de ancla" />
+        </figure>
+        <p>Ejemplo en página externa:</p>
+        <figure>
+          <img src="./img/ejemploancla2.png" alt="Ejemplo de ancla" />
+        </figure>
+        <p>
+          El Atributo href sirve para indicar a que lugar de la página queremos
+          ir (Equivalente a "quiero ir a:"). El atributo name es una marca que
+          le sirve al atributo href para saber a que lugar de la página llegar
+          (Le estamos dando nombre a la marca, en este caso "noticia1") .
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
