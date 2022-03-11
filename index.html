@@ -4,24 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Complemento para HTML & CSS</title>
   </head>
-  <body>
+  <body class="BaseLayout">
     <header>
       <nav>
-        <ul>
-          <a href="./HTML.html" target="_blank"><li>HTML</li></a>
-          <a href="./CSS.html" target="_blank"><li>CSS</li></a>
-          <a href="https://github.com/Iradion/Platzi" target="blank"
-            ><li>Git del desarrollo</li></a
-          >
+        <ul class="navbar navbar--main">
+          <li class="navbar--main__item">
+            <a href="./HTML.html" target="_blank">HTML</a>
+          </li>
+          <li class="navbar--main__item">
+            <a href="./CSS.html" target="_blank">CSS</a>
+          </li>
+          <li class="navbar--main__item">
+            <a href="https://github.com/Iradion/Platzi" target="blank"
+              >Git del desarrollo</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section>
-        <h1>Antes de empezar...</h1>
-        <p>
+        <h1 class="encabezado">Antes de empezar...</h1>
+        <p class="parrafo descripcion">
           Esta página busca complementar lo aprendido en el
           <a href="https://platzi.com/cursos/html-css/" target="_blank"
             >curso definitivo de CSS y HTML</a
@@ -33,30 +40,32 @@
         </p>
       </section>
       <section>
-        <h2>¿Qué significa HTML & CSS?</h2>
-        <p>
+        <h2 class="encabezado2 encabezado2--intro">
+          ¿Qué significa HTML & CSS?
+        </h2>
+        <p class="parrafo descripcionhtmlcss">
           HTML viene del inglés Hypertext markup language, básicamente el
-          “esqueleto” de la página en sí, las bases.
+          “esqueleto” de la página en sí, las bases. CSS por su parte viene del
+          inglés Cascade Style Sheet y es básicamente la apariencia de la
+          página.
+          <figure class="img">
+            <img src="./img/htmlcss.png" alt="htmlcss" />
+            <figcaption>Anatomía de una página web.</figcaption>
+          </figure>
         </p>
-        <p>
-          CSS por su parte viene del inglés Cascade Style Sheet y es básicamente
-          la apariencia de la página.
-        </p>
-        <figure>
-          <img src="./img/htmlcss.png" alt="htmlcss" />
-          <figcaption>Anatomía de una página web.</figcaption>
-        </figure>
       </section>
       <section>
-        <h2>Herramientas que podrían ayudarte.</h2>
-        <dl>
-          <a href="https://www.w3schools.com/TAgs/default.asp"
-            ><dt>Etiquetas:</dt></a
-          >
+        <h3 class="encabezado3">Herramientas que podrían ayudarte.</h3>
+        <dl class="parrafo herramientas">
+          <dt class="herramientas__item">
+            <a href="https://www.w3schools.com/TAgs/default.asp" target="_blank"
+              >Etiquetas:</a
+            >
+          </dt>
           <dd>Listado de etiquetas HTML.</dd>
-          <a href="https://mediaqueri.es/" target="_blank"
-            ><dt>Mediaqueri:</dt></a
-          >
+          <dt class="herramientas__item">
+            <a href="https://mediaqueri.es/" target="_blank">Mediaqueri:</a>
+          </dt>
           <dd>
             Algunas ideas sobre como deberíamos implementar el diseño responsive
             en nuestro sitio.
@@ -67,42 +76,58 @@
             desde un celular o una computadora, sea igual de entendible en
             ambas.
           </dd>
-          <a href="https://coolors.co/palettes/trending" target="_blank"
-            ><dt>Coolors:</dt></a
-          >
+          <dt class="herramientas__item">
+            <a href="https://coolors.co/palettes/trending" target="_blank"
+              >Coolors:</a
+            >
+          </dt>
           <dd>Paletas de colores.</dd>
-          <a href="https://unsplash.com/" target="_blank"><dt>Unsplash:</dt></a>
+          <dt class="herramientas__item">
+            <a href="https://unsplash.com/" target="_blank">Unsplash:</a>
+          </dt>
           <dd>Imágenes sin derechos de autor.</dd>
-          <a href="https://coverr.co/" target="_blank"><dt>Coverr:</dt></a>
+          <dt class="herramientas__item">
+            <a href="https://coverr.co/" target="_blank">Coverr:</a>
+          </dt>
           <dd>Vídeos sin derechos de autor.</dd>
-          <a href="https://www.fontpair.co/" target="_blank"
-            ><dt>FontPair:</dt></a
-          >
+          <dt class="herramientas__item">
+            <a href="https://www.fontpair.co/" target="_blank">FontPair:</a>
+          </dt>
           <dd>Ver cuales fuentes puedes combinar.</dd>
-          <a href="https://icons8.com/" target="_blank"><dt>Icons8:</dt></a>
+          <dt class="herramientas__item">
+            <a href="https://icons8.com/" target="_blank">Icons8:</a>
+          </dt>
           <dd>Iconos, vectores, música y algunos recursos más…</dd>
-          <a href="https://fonts.google.com/" target="_blank"
-            ><dt>Google Fonts:</dt></a
-          >
+          <dt class="herramientas__item">
+            <a href="https://fonts.google.com/" target="_blank"
+              >Google Fonts:</a
+            >
+          </dt>
           <dd>Obtener fuentes.</dd>
-          <a href="https://tinypng.com/" target="_blank"><dt>Tiny PNG:</dt></a>
+          <dt class="herramientas__item">
+            <a href="https://tinypng.com/" target="_blank">Tiny PNG:</a>
+          </dt>
           <dd>
             Comprime el tamaño de una o mas imagenes, para hacerla más ligeras.
           </dd>
-          <a href="https://www.verexif.com/" target="_blank"
-            ><dt>Verefix:</dt></a
-          >
+          <dt class="herramientas__item">
+            <a href="https://www.verexif.com/" target="_blank">Verefix:</a>
+          </dt>
           <dd>Elimina los metadatos de una imagen, para reducir su tamaño.</dd>
         </dl>
-        <h2>Documentación.</h2>
-        <dl>
-          <a href="https://cssreference.io/" target="_blank"><dt>CSS:</dt></a>
+        <h3 class="encabezado3">Documentación.</h3>
+        <dl class="herramientas">
+          <dt class="herramientas__item">
+            <a href="https://cssreference.io/" target="_blank">CSS:</a>
+          </dt>
           <dd>Guía visual de CSS, aprende con el ejemplo.</dd>
-          <a href="https://htmlreference.io/" target="_blank"><dt>HTML:</dt></a>
+          <dt class="herramientas__item">
+            <a href="https://htmlreference.io/" target="_blank">HTML:</a>
+          </dt>
           <dd>Guía de HTML, aprende con el ejemplo.</dd>
-          <a href="https://unsplash.com/" target="_blank"
-            ><dt>Browserdiet:</dt></a
-          >
+          <dt class="herramientas__item">
+            <a href="https://unsplash.com/" target="_blank">Browserdiet:</a>
+          </dt>
           <dd>Optimizar sitios web.</dd>
           <dd>
             Hint: ¿Qué significa optimizar un sitio web? Al crear un sitio web
@@ -110,27 +135,33 @@
             página, sea de forma uniforme, sin tirones, etc...
           </dd>
         </dl>
-        <h2>Practica jugando.</h2>
-        <dl>
-          <a href="https://cssgridgarden.com/#es" target="_blank"
-            ><dt>Grid Layout:</dt></a
-          >
+        <h3 class="encabezado3">Practica jugando.</h3>
+        <dl class="herramientas">
+          <dt class="herramientas__item">
+            <a href="https://cssgridgarden.com/#es" target="_blank"
+              >Grid Layout:</a
+            >
+          </dt>
           <dd>Un juego para aprender CSS grid</dd>
-          <a href="https://flexboxfroggy.com/#es" target="_blank"
-            ><dt>Grid Layout:</dt></a
-          >
+          <dt class="herramientas__item">
+            <a href="https://flexboxfroggy.com/#es" target="_blank"
+              >Grid Layout:</a
+            >
+          </dt>
           <dd>Un juego para aprender CSS flexbox</dd>
         </dl>
       </section>
     </main>
     <footer>
-      <p>
-        Dudas, consejos, correcciones a la página:
-        <a href="https://github.com/Iradion/Platzi/issues/new" target="_blank"
-          >Contacto</a
-        >
-      </p>
-      <p>Iradion 2022.</p>
+      <div class="parrafo final">
+        <p>
+          Dudas, consejos, correcciones a la página:
+          <a href="https://github.com/Iradion/Platzi/issues/new" target="_blank"
+            >contacto</a
+          >
+        </p>
+        <p>Iradion 2022.</p>
+      </div>
     </footer>
   </body>
 </html>

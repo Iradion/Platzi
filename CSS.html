@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS.css" />
+    <title>CSS</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>CSS</h1>
+        <h2>Índice:</h2>
+        <ul>
+          <li><a href="#formas">Tipos de CSS.</a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </section>
+      <section>
+        <a name="formas"></a>
+        <h2>Las tres formas de hacerlo</h2>
+        <h3>Link referenciado</h3>
+        <p>
+          Creando un documento especifico para el estilo de nuestras páginas y
+          llamándolo desde la cabecera(&lt;head&gt;).
+        </p>
+        <h3>Etiqueta</h3>
+        <p>
+          Creándolo con &lt;style&gt; dentro del mismo codigo HTML de la página.
+        </p>
+        <h3>Atributo</h3>
+        <p>Dándole un atributo al elemento que queremos editar.</p>
+        <p>
+          De las tres opciones la mejor práctica es usar la de link
+          referenciado, solo en casos especificos usaremos las otras dos
+          opciones.
+        </p>
+      </section>
+      <section>
+        <h2>Estructura básica de CSS.</h2>
+        <h3>Selector:</h3>
+        <p>
+          Como su nombre lo indica, sirve para elegir el elemento a editar. Se
+          pueden crear clases, ID y otro tipo de especificaciones para hacer
+          selecciones más especificas.
+        </p>
+        <h3>Propiedad:</h3>
+        <p>Que tipo de edición se va a hacer.</p>
+        <h3>Valor:</h3>
+        <p>Valor de la edición en cuestión.</p>
+        <figure>
+          <img src="./img/reglacss.png" alt="regla css" />
+        </figure>
+      </section>
+      <section>
+        <h2>¿Qué es BEM?</h2>
+        <p>
+          En palabras simples, una forma ordenada de nombrar a nuestras clases
+          que al mismo tiempo nos beneficia en nuestro codigo.
+        </p>
+        <h3>Visto desde atrás:</h3>
+        <pre>
+ HTML:
+          &lt;button class="button"&gt;
+           Botón Normal  
+           &lt;/button&gt; &lt;button
+          class="button button--state-success"&gt;
+           Botón éxito
+          &lt;/button&gt; &lt;button class="button button--state-danger"&gt;
+           Botón peligro &lt;
+          button&gt;
+        </pre>
+        <pre>
+ CSS:
+          .button {
+	display: inline-block;
+	border-radius: 3px;
+	padding: 7px 12px;
+	border: 1px solid #D5D5D5;
+	background-image: linear-gradient(#EEE, #DDD);
+	font: 700 13px/18px Helvetica, arial;
+}
+.button--state-success {
+	color: #FFF;
+	background: #569E3D linear-gradient(#79D858, #569E3D) repeat-x;
+	border-color: #4A993E;
+}
+.button--state-danger {
+	color: #900;
+}
+        </pre>
+        <p>Resultado:</p>
+        <button class="button">Normal button</button>
+        <button class="button button--state-success">Success button</button>
+        <button class="button button--state-danger">Danger button</button>
+        <p>
+          El objetivo final de BEM es dividir la interfaz de usuario en bloques
+          independientes para crear componentes escalables y reutilizables.
+          Propone un estilo descriptivo para nombrar cada una de las clases a
+          utilizar, permitiendo así crear un estructura de código consistente.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
