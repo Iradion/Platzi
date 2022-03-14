@@ -4,10 +4,15 @@
 }
 
 .BaseLayout {
-  margin-left: 150px;
+  margin: 0px;
   background-color: #0e1c26;
   font-family: epilogue;
   color: whitesmoke;
+}
+
+main {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .navbar {
@@ -56,7 +61,7 @@
 
 .descripcion {
   text-align: center;
-  padding: 40%;
+  padding: 400px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -83,7 +88,6 @@
 }
 
 .descripcionhtmlcss {
-  margin: 150px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 1200px;
