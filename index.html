@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="./index.css" />
     <title>Complemento para HTML & CSS</title>
   </head>
-  <body class="BaseLayout">
-    <header>
+  <body class="BodyLayout">
+    <header class="navigation-content">
       <nav>
+        <!-- <figure>
+          <img src="./img/seal.jpg" alt="logo" id="logoheader" />
+        </figure> -->
         <ul class="navbar navbar--main">
           <li class="navbar--main__item">
             <a href="./HTML.html" target="_blank">HTML</a>
@@ -40,6 +43,12 @@
         </p>
       </section>
       <section>
+        <figure id="img">
+          <img src="./img/htmlcss.png" alt="htmlcss" />
+          <figcaption style="text-align: center">
+            Anatomía de una página web.
+          </figcaption>
+        </figure>
         <h2 class="encabezado2 encabezado2--intro">
           ¿Qué significa HTML & CSS?
         </h2>
@@ -48,10 +57,6 @@
           “esqueleto” de la página en sí, las bases. CSS por su parte viene del
           inglés Cascade Style Sheet y es básicamente la apariencia de la
           página.
-          <figure class="img">
-            <img src="./img/htmlcss.png" alt="htmlcss" />
-            <figcaption>Anatomía de una página web.</figcaption>
-          </figure>
         </p>
       </section>
       <section>
@@ -116,7 +121,7 @@
           <dd>Elimina los metadatos de una imagen, para reducir su tamaño.</dd>
         </dl>
         <h3 class="encabezado3">Documentación.</h3>
-        <dl class="herramientas">
+        <dl class="parrafo herramientas">
           <dt class="herramientas__item">
             <a href="https://cssreference.io/" target="_blank">CSS:</a>
           </dt>
@@ -136,7 +141,7 @@
           </dd>
         </dl>
         <h3 class="encabezado3">Practica jugando.</h3>
-        <dl class="herramientas">
+        <dl class="parrafo herramientas">
           <dt class="herramientas__item">
             <a href="https://cssgridgarden.com/#es" target="_blank"
               >Grid Layout:</a
