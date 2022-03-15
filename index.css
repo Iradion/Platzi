@@ -9,29 +9,32 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .BodyLayout {
   background: linear-gradient(#0e1c26, #1c3139) repeat-x;
   font-family: epilogue;
-  font-size: 62.5%;
   color: whitesmoke;
   margin: 0;
   padding-left: 20%;
   padding-right: 20%;
 }
 
-#logoheader {
+/*#logoheader {
   max-width: 4rem;
   height: auto;
-}
+}*/
 
-.navigation-content{
+.navigation-content {
   position: relative;
   display: block;
 }
 
 .navbar {
   font-weight: 100;
-  font-size: 1.5rem;
+  font-size: 2.6rem;
   background: #253e45;
 }
 
@@ -39,8 +42,7 @@
   border-radius: 8px;
   text-align: center;
   margin: 1rem 0;
-  padding: 2rem 0;
-
+  padding: 3rem 0;
 }
 
 .navbar--main__item {
@@ -50,7 +52,7 @@
 .navbar--main__item a {
   color: whitesmoke;
   text-decoration: none;
-  padding: 2rem 3rem;
+  padding: 3rem 7rem;
 }
 
 .navbar--main__item a:hover {
@@ -64,13 +66,13 @@
 }
 
 .encabezado {
-  font-size: 3rem;
+  font-size: 5rem;
   text-align: center;
   margin: 1rem;
 }
 
 .parrafo {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin: 1rem;
 }
 
@@ -85,7 +87,7 @@
 }
 
 .encabezado2 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: left;
 }
 
@@ -95,7 +97,7 @@
 }
 
 .encabezado3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: left;
 }
 
@@ -103,7 +105,6 @@
   margin: 0;
   padding-bottom: 1rem;
   padding-right: 30rem;
-  display: block;
 }
 
 #img {
@@ -112,11 +113,11 @@
 }
 
 .herramientas {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .herramientas a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   color: #09a6f3;
 }
@@ -124,10 +125,10 @@
 .final {
   float: right;
   text-align: right;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
-.final a {
-  text-decoration: none;
-  color: #09a6f3;
+.about-icon{
+  width: 2.5rem;
+  height: 2.5rem;
 }
