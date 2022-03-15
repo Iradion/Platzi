@@ -2,133 +2,61 @@
   font-family: epilogue;
   src: url(./Fonts/Epilogue/Epilogue-VariableFont_wght.ttf);
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 html {
   font-size: 62.5%;
-}
-
-.BodyLayout {
-  background: linear-gradient(#0e1c26, #1c3139) repeat-x;
+  background: #1c3139;
   font-family: epilogue;
-  color: whitesmoke;
-  margin: 0;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-/*#logoheader {
-  max-width: 4rem;
+  width: max-content;
   height: auto;
-}*/
-
-.navigation-content {
-  position: relative;
-  display: block;
+  padding: 0 35rem;
 }
-
+.iframe {
+  width: 100%;
+  height: 130rem;
+}
 .navbar {
-  font-weight: 100;
-  font-size: 2.6rem;
-  background: #253e45;
+    font-weight: 100;
+    font-size: 2.6rem;
+    background: #253e45;
 }
-
-.navbar--main {
+.navbar__main {
+  width: auto;
+  height: auto;
   border-radius: 8px;
   text-align: center;
   margin: 1rem 0;
-  padding: 3rem 0;
+  padding: 3rem 10rem;
 }
-
-.navbar--main__item {
+.navbar__item {
   display: inline-block;
 }
-
-.navbar--main__item a {
+.navbar__item a {
   color: whitesmoke;
   text-decoration: none;
   padding: 3rem 7rem;
 }
-
-.navbar--main__item a:hover {
+.navbar__item a:hover {
   background-color: #2a454b;
   color: #09a6f3;
 }
-
-.navbar--main__item a:active {
+.navbar__item a:active {
   background-color: #21373f;
   color: #0e1c26;
 }
-
-.encabezado {
-  font-size: 5rem;
-  text-align: center;
-  margin: 1rem;
-}
-
-.parrafo {
-  font-size: 1.6rem;
-  margin: 1rem;
-}
-
-.descripcion {
-  text-align: center;
-  padding: 0 20%;
-}
-
-.parrafo a {
-  text-decoration: none;
-  color: #09a6f3;
-}
-
-.encabezado2 {
-  font-size: 3rem;
-  text-align: left;
-}
-
-.encabezado2--intro {
-  padding-top: 5rem;
-  padding-bottom: 1rem;
-}
-
-.encabezado3 {
-  font-size: 2rem;
-  text-align: left;
-}
-
-.descripcionhtmlcss {
-  margin: 0;
-  padding-bottom: 1rem;
-  padding-right: 30rem;
-}
-
-#img {
-  float: right;
-  margin-top: 5rem;
-}
-
-.herramientas {
-  font-size: 1.6rem;
-}
-
-.herramientas a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: #09a6f3;
-}
-
-.final {
-  float: right;
+.footer {
   text-align: right;
   font-size: 1.2rem;
 }
-
-.about-icon{
+.footer__info{
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+.footer__icon {
   width: 2.5rem;
   height: 2.5rem;
 }

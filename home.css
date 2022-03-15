@@ -1,0 +1,92 @@
+@font-face {
+  font-family: epilogue;
+  src: url(./Fonts/Epilogue/Epilogue-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.BodyLayout {
+  background: #0e1c26;
+  font-family: epilogue;
+  color: whitesmoke;
+  margin: 0;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+/*#logoheader {
+  max-width: 4rem;
+  height: auto;
+}*/
+
+.navigation-content {
+  position: relative;
+  display: block;
+}
+
+.encabezado {
+  font-size: 5rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.parrafo {
+  font-size: 1.6rem;
+  margin: 1rem;
+}
+
+.descripcion {
+  text-align: center;
+  padding: 0 20%;
+}
+
+.parrafo a {
+  text-decoration: none;
+  color: #09a6f3;
+}
+
+.encabezado2 {
+  font-size: 3rem;
+  text-align: left;
+}
+
+.encabezado2--intro {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.encabezado3 {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.descripcionhtmlcss {
+  margin: 0;
+  padding-bottom: 1rem;
+  padding-right: 30rem;
+}
+
+.img {
+  float: right;
+  margin-top: 5rem;
+}
+
+.herramientas {
+  font-size: 1.6rem;
+}
+
+.herramientas a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #09a6f3;
+}
+
+

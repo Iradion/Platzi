@@ -4,25 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./HTML.css" />
     <title>HTML</title>
   </head>
   <body>
     <main>
       <section>
-        <h1>HTML</h1>
-        <h2>Índice:</h2>
-        <ul class="indice">
-          <li><a href="#anatomia">Anatomía del layout.</a></li>
-          <li><a href="#etiquetas">Etiquetas.</a></li>
-          <li><a href="#imagenes">Imágenes.</a></li>
-          <li><a href="#formularios">Formularios.</a></li>
-        </ul>
+        <h1 class="encabezado">HTML</h1>
+        <h2 class="encabezado2">Índice:</h2>
+        <nav aria-labelledby="nav-indice">
+          <ul class=" navbar navbar--indice">
+            <li><a href="#anatomia">Anatomía del layout.</a></li>
+            <li><a href="#etiquetas">Etiquetas.</a></li>
+            <li><a href="#imagenes">Imágenes.</a></li>
+            <li><a href="#formularios">Formularios.</a></li>
+          </ul>
+        </nav>
       </section>
       <section>
         <a name="anatomia"></a>
-        <h2>Anatomía del layout o maquetación semántica HTML.</h2>
-        <h3>¿Qué es un Layout o maquetación?</h3>
+        <h2 class="encabezado2">Anatomía del layout o maquetación semántica HTML.</h2>
+        <h3 class="encabezado3">¿Qué es un Layout o maquetación?</h3>
         <p>
           Estructuración del documento en el cual van dentro sus respectivas
           etiquetas. En adición, una maquetación semántica es la que se hace de
