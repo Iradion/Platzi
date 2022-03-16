@@ -10,12 +10,10 @@
 html {
   font-size: 62.5%;
   font-family: epilogue;
+  background: #1c3139;
   color: whitesmoke;
   margin: 0;
-  padding: 0 30rem;
-}
-main {
-  background: #0e1c26;
+  padding: 0 15rem;
 }
 .encabezado {
   font-size: 5rem;
