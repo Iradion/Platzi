@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./home.css" />
     <title>Complemento para HTML & CSS</title>
   </head>
-  <body class="BodyLayout">
+  <body>
     <main>
-      <section>
-        <h1 class="encabezado">Antes de empezar...</h1>
-        <p class="parrafo descripcion" contenteditable="false">
+      <section class="introduccion">
+        <h1 class="encabezado introduccion__encabezado">Antes de empezar...</h1>
+        <p class="parrafo introduccion__parrafo">
           Esta página busca complementar lo aprendido en el
           <a href="https://platzi.com/cursos/html-css/" target="_blank"
             >curso definitivo de CSS y HTML</a
@@ -21,27 +21,27 @@
           ciertos apuntes, tips o cualquier cosa que pueda ayudarte a entender
           mejor lo que estamos aprendiendo.
         </p>
+        <figure class="img">
+          <img src="./img/htmlcss.png" alt="htmlcss" class="introduccion__img" />
+          <figcaption>
+            Anatomía de una página web.
+          </figcaption>
+        </figure>
       </section>
-      <figure class="img">
-        <img src="./img/htmlcss.png" alt="htmlcss" />
-        <figcaption style="text-align: center">
-          Anatomía de una página web.
-        </figcaption>
-      </figure>
-      <section>
-        <h2 class="encabezado2 encabezado2--intro">
+      <section class="htmlcss">
+        <h2 class="encabezado2 htmlcss__encabezado">
           ¿Qué significa HTML & CSS?
         </h2>
-        <p class="parrafo descripcionhtmlcss">
+        <p class="parrafo htmlcss__parrafo">
           HTML viene del inglés Hypertext markup language, básicamente el
           “esqueleto” de la página en sí, las bases. CSS por su parte viene del
           inglés Cascade Style Sheet y es básicamente la apariencia de la
           página.
         </p>
       </section>
-      <section>
-        <h3 class="encabezado3">Herramientas que podrían ayudarte.</h3>
-        <dl class="parrafo herramientas">
+      <section class="herramientas">
+        <h3 class="encabezado3 herramientas__encabezado">Herramientas que podrían ayudarte.</h3>
+        <dl class="herramientas__lista">
           <dt class="herramientas__item">
             <a href="https://www.w3schools.com/TAgs/default.asp" target="_blank"
               >Etiquetas:</a
@@ -100,17 +100,17 @@
           </dt>
           <dd>Elimina los metadatos de una imagen, para reducir su tamaño.</dd>
         </dl>
-        <h3 class="encabezado3">Documentación.</h3>
-        <dl class="parrafo herramientas">
-          <dt class="herramientas__item">
+        <h3 class="encabezado3 documentacion__encabezado">Documentación.</h3>
+        <dl class="documentacion__lista">
+          <dt class="documentacion__item">
             <a href="https://cssreference.io/" target="_blank">CSS:</a>
           </dt>
           <dd>Guía visual de CSS, aprende con el ejemplo.</dd>
-          <dt class="herramientas__item">
+          <dt class="documentacion__item">
             <a href="https://htmlreference.io/" target="_blank">HTML:</a>
           </dt>
           <dd>Guía de HTML, aprende con el ejemplo.</dd>
-          <dt class="herramientas__item">
+          <dt class="documentacion__item">
             <a href="https://unsplash.com/" target="_blank">Browserdiet:</a>
           </dt>
           <dd>Optimizar sitios web.</dd>
@@ -120,15 +120,15 @@
             página, sea de forma uniforme, sin tirones, etc...
           </dd>
         </dl>
-        <h3 class="encabezado3">Practica jugando.</h3>
-        <dl class="parrafo herramientas">
-          <dt class="herramientas__item">
+        <h3 class="encabezado3 juegos__encabezado">Practica jugando.</h3>
+        <dl class="juegos__lista">
+          <dt class="juegos__item">
             <a href="https://cssgridgarden.com/#es" target="_blank"
               >Grid Layout:</a
             >
           </dt>
           <dd>Un juego para aprender CSS grid</dd>
-          <dt class="herramientas__item">
+          <dt class="juegos__item">
             <a href="https://flexboxfroggy.com/#es" target="_blank"
               >Grid Layout:</a
             >

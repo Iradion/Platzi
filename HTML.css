@@ -10,57 +10,188 @@
 html {
   font-size: 62.5%;
   font-family: epilogue;
-}
-body {
-  background: #0e1c26;
   color: whitesmoke;
   margin: 0;
-  padding-left: 20rem;
-  padding-right: 20rem;
+  padding: 0 30rem;
+}
+main {
+  background: #0e1c26;
 }
 .encabezado {
   font-size: 5rem;
+}
+.inicio__encabezado {
   text-align: center;
   margin: 1rem;
 }
+.inicio__icon {
+  width: 4rem;
+  height: auto;
+}
 .encabezado2 {
   font-size: 3.5rem;
+}
+.indice__encabezado {
+  text-align: center;
   margin: 1rem;
-}
-.encabezado3 {
-  font-size: 2rem;
-  text-align: left;
-}
-p {
-    font-size: 1.6rem;
-    margin: 1rem;
 }
 .navbar {
   font-weight: 100;
   font-size: 2.6rem;
   background: #253e45;
-}
-.navbar--indice {
+  margin: 0 30rem;
   border-radius: 8px;
-  width: fit-content;
+}
+.navbar__indice {
+  text-align: center;
+  width: auto;
   height: auto;
   margin: 1rem;
 }
-.navbar--indice li {
+.navbar__item {
   list-style: none;
-  text-decoration: none;
+  display: block;
   width: auto;
   height: auto;
-  padding: 0.5rem;
+  padding: 0.5rem 0rem;
 }
-.navbar--indice li a {
+.navbar__item a {
   color: whitesmoke;
   text-decoration: none;
-  width: available;
+  padding: 0.5rem 5rem;
 }
-.navbar--indice li a:hover {
+.navbar__item a:hover {
   color: #09a6f3;
   background-color: #2a454b;
   border-radius: 2px;
 }
-
+.encabezado3 {
+  font-size: 2rem;
+}
+.anatomia {
+  font-size: 1.6rem;
+}
+.etiquetas {
+  font-size: 1.6rem;
+}
+.anatomia__encabezado {
+  text-align: center;
+  margin: 2rem 0;
+}
+.parrafo {
+  font-size: 1.6rem;
+}
+.parrafo--hint {
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.anatomia__parrafo {
+  text-align: center;
+  margin: 1rem;
+  padding: 0 30rem;
+}
+.definiciones__list {
+  margin: 5rem 0 0;
+  text-align: center;
+}
+.definiciones__item {
+  color: #09a6f3;
+  font-size: 2rem;
+  margin: 1rem 0 0;
+}
+.anatomia__img {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 2rem auto;
+}
+.etiquetas__encabezado {
+  text-align: center;
+  margin: 1rem 0;
+}
+.etiquetas__parrafo {
+  text-align: center;
+  width: 50%;
+  margin: 1rem auto 0;
+}
+.etiquetas__list {
+  margin: 5rem 0;
+  text-align: center;
+}
+.etiquetas__item {
+  color: #09a6f3;
+  font-size: 2rem;
+  margin: 1rem 0 0;
+}
+.etiquetas__img {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+.elementos__encabezado {
+  text-align: center;
+}
+.elementos__list {
+  margin: 5rem 0;
+  text-align: center;
+}
+.elementos__item {
+  color: #09a6f3;
+  font-size: 2rem;
+  margin: 1rem 0 0;
+}
+.img {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 1rem auto 0;
+}
+.imagenes {
+  font-size: 1.6rem;
+}
+.imagenes__encabezado {
+  text-align: center;
+}
+.imagenes__list {
+  margin: 2rem 0;
+  text-align: center;
+}
+.imagenes__item {
+  color: #09a6f3;
+  font-size: 2rem;
+  margin: 1rem 0 0;
+}
+.imagenes__img {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 1rem auto;
+}
+.formularios__encabezado {
+  text-align: center;
+}
+.formularios__parrafo {
+  text-align: center;
+  width: 50%;
+  margin: 1rem auto 0;
+}
+.botones {
+  text-align: center;
+  margin: 2rem;
+}
+.anclas__encabezado {
+  text-align: center;
+}
+.anclas__parrafo {
+  text-align: center;
+  width: 50%;
+  margin: 1rem auto 0;
+}
+.anclas__img {
+  display: block;
+  width: 100rem;
+  height: auto;
+  margin: 1rem auto;
+}

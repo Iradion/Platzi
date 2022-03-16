@@ -10,21 +10,57 @@
   <body>
     <header>
       <nav class="navbar">
-        <!-- <figure>
-          <img src="./img/seal.jpg" alt="logo" id="logoheader" />
+        <!-- <figure class="logo">
+          <img
+            src="./img/Iradion-logo.png"
+            alt="navbar logo"
+            class="navbar__logo"
+          />
+          <figcaption style="text-align: center">Iradion</figcaption>
         </figure> -->
         <ul class="navbar__main">
           <li class="navbar__item">
-            <a href="./home.html" target="iframe">Inicio</a>
+            <figure class="icon">
+              <a href="./home.html" target="iframe"
+                ><img
+                  class="navbar__icon"
+                  src="./icons/home-icon.png"
+                  alt="Home icon"
+              /></a>
+            </figure>
           </li>
           <li class="navbar__item">
-            <a href="./HTML.html" target="iframe">HTML</a>
+            <figure>
+              <a href="./HTML.html" target="iframe"
+                >HTML<img
+                  class="navbar__icon"
+                  src="./icons/html-icon.png"
+                  alt="HTML icon"
+              /></a>
+            </figure>
           </li>
           <li class="navbar__item">
-            <a href="./CSS.html" target="iframe">CSS</a>
+            <figure>
+              <a href="./CSS.html" target="iframe"
+                >CSS<img
+                  class="navbar__icon"
+                  src="./icons/css-icon.png"
+                  alt="CSS icon"
+              /></a>
+            </figure>
           </li>
           <li class="navbar__item">
-            <a href="https://github.com/" target="_blank">Git del desarrollo</a>
+            <figure>
+              <a href="https://github.com/" target="_blank"
+                >Git<img
+                  class="navbar__icon"
+                  src="./icons/git-icon.png"
+                  alt="Github icon" />&nbsp;&nbsp;<img
+                  class="navbar__icon"
+                  src="./icons/external-icon.png"
+                  alt="External icon"
+              /></a>
+            </figure>
           </li>
         </ul>
       </nav>
@@ -34,19 +70,22 @@
         class="iframe"
         src="./home.html"
         frameborder="0"
-        scrolling="no"
+        scrolling="true"
         name="iframe"
       ></iframe>
     </main>
     <footer class="footer">
       <div class="footer__info">
         <address>
-          <span>Dudas, consejos, correcciones:</span>
+          Dudas, consejos, correcciones:
           <figure class="icon">
             <a
               href="https://github.com/Iradion/Platzi/issues/new"
               target="_blank"
-              ><img src="./icons/about.png" alt="about" class="footer__icon"
+              ><img
+                src="./icons/about.png"
+                alt="About icon"
+                class="footer__icon"
             /></a>
           </figure>
           <span>Iradion 2022.</span>

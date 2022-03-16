@@ -9,143 +9,167 @@
   </head>
   <body>
     <main>
-      <section>
-        <h1 class="encabezado">HTML</h1>
-        <h2 class="encabezado2">Índice:</h2>
-        <nav aria-labelledby="nav-indice">
-          <ul class=" navbar navbar--indice">
-            <li><a href="#anatomia">Anatomía del layout.</a></li>
-            <li><a href="#etiquetas">Etiquetas.</a></li>
-            <li><a href="#imagenes">Imágenes.</a></li>
-            <li><a href="#formularios">Formularios.</a></li>
+      <div class="inicio">
+        <figure>
+          <h1 class="encabezado inicio__encabezado">
+            HTML<img
+              src="./icons/html-icon.png"
+              alt="html icon"
+              class="inicio__icon"
+            />
+          </h1>
+        </figure>
+      </div>
+      <section class="indice">
+        <h2 class="encabezado2 indice__encabezado">Índice:</h2>
+        <nav class="navbar">
+          <ul class="navbar__indice">
+            <li class="navbar__item">
+              <a href="#anatomia">Anatomía del layout.</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#etiquetas">Etiquetas.</a>
+            </li>
+            <li class="navbar__item"><a href="#imagenes">Imágenes.</a></li>
+            <li class="navbar__item">
+              <a href="#formularios">Formularios.</a>
+            </li>
           </ul>
         </nav>
       </section>
-      <section>
+      <section class="anatomia">
         <a name="anatomia"></a>
-        <h2 class="encabezado2">Anatomía del layout o maquetación semántica HTML.</h2>
-        <h3 class="encabezado3">¿Qué es un Layout o maquetación?</h3>
-        <p>
+        <h2 class="encabezado2 anatomia__encabezado">
+          Anatomía del layout o maquetación semántica HTML.
+        </h2>
+        <h3 class="encabezado3 anatomia__encabezado">
+          ¿Qué es un Layout o maquetación?
+        </h3>
+        <p class="parrafo anatomia__parrafo">
           Estructuración del documento en el cual van dentro sus respectivas
           etiquetas. En adición, una maquetación semántica es la que se hace de
           forma ordenada, limpia y con buenas prácticas, lo cual hace que
           nuestro contenido sea mas legible y sea mejor indexado por los
           buscadores web.
         </p>
-        <p>
+        <p class="parrafo--hint anatomia__parrafo">
           Hint: Indexar significa el listado de páginas que arroja un buscador
           web como Google. Si nuestra página esta bien maquetada, es más facil
           para estos buscadores leer nuestra página, lo que facilita que salga
           en los resultados de estos buscadores.
         </p>
-        <dl>
-          <dt>Header:</dt>
+        <dl class="definiciones__list">
+          <dt class="definiciones__item">Header:</dt>
           <dd>
             Encabezado de la página, donde va el logo y botones de navegación.
           </dd>
-          <dt>Main:</dt>
+          <dt class="definiciones__item">Main:</dt>
           <dd>Zona del contenido principal.</dd>
-          <dt>Sidebar:</dt>
+          <dt class="definiciones__item">Sidebar:</dt>
           <dd>Contenido de barra lateral</dd>
-          <dt>Footer:</dt>
+          <dt class="definiciones__item">Footer:</dt>
           <dd>
             Zona final de una página, normalmente es donde va información de
             contacto, etc...
           </dd>
         </dl>
-        <figure>
-          <img src="./img/anatomiaweb.png" alt="anatomiaweb" />
+        <figure class="img">
+          <img
+            src="./img/anatomiaweb.png"
+            alt="anatomiaweb"
+            class="anatomia__img"
+          />
         </figure>
         <!-- Idea: dejar una captura de mi página usandola como ejemplo de anatomia de HTML. -->
       </section>
-      <section>
+      <section class="etiquetas">
         <a name="etiquetas"></a>
-        <h2>Etiquetas.</h2>
-        <h3>¿Qué es una etiqueta?</h3>
-        <p>
+        <h2 class="encabezado2 etiquetas__encabezado">Etiquetas.</h2>
+        <h3 class="encabezado3 etiquetas__encabezado">¿Qué es una etiqueta?</h3>
+        <p class="parrafo etiquetas__parrafo">
           Una etiqueta es un codigo que se le da al texto, este codigo es el que
           lee y renderiza nuestro navegador al abrir nuestra página. Dependiendo
           el texto, es nuestro trabajo agregarlo su respectiva etiqueta.
         </p>
-        <p>
+        <p class="parrafo--hint etiquetas__parrafo">
           Hint: El renderizado de una página se refiere a plasmar en pantalla la
           información que estamos escribiendo.
         </p>
-        <p>
-          Ejemplo con la etiqueta "p" para un parrafo: &lt;p&gt; Soy un parrafo
-          &lt;/p&gt;
+        <p class="parrafo etiquetas__parrafo">
+          Ejemplo con la etiqueta "p" para un parrafo: &lt;p&gt;Soy un
+          parrafo&lt;/p&gt;
         </p>
-        <h3>Estructura de una etiqueta</h3>
-        <dl>
-          <dt>Etiqueta de inicio:</dt>
+        <h3 class="encabezado3 etiquetas__encabezado">Estructura de una etiqueta</h3>
+        <dl class="etiquetas__list">
+          <dt class="etiquetas__item">Etiqueta de inicio:</dt>
           <dd>Es la que abre el codigo del texto</dd>
-          <dt>Atributo:</dt>
+          <dt class="etiquetas__item">Atributo:</dt>
           <dd>
             Ajusta el comportamiento del texto para cumplir el criterio del
             usuario.
           </dd>
-          <dt>Valor:</dt>
+          <dt class="etiquetas__item">Valor:</dt>
           <dd>
             Atributo y valor van de la mano, basicamente sirve para darle un
             comportamiento mas especifico a nuestra etiqueta, ya que dentro de
             un solo atributo pueden existir muchos valores que dar.
           </dd>
-          <dt>Contenido:</dt>
+          <dt class="etiquetas__item">Contenido:</dt>
           <dd>
             El texto en sí, en caso de que lo lleve, no todas las etiquetas
             llevan contenido.
           </dd>
-          <dt>Etiqueta de cierre:</dt>
+          <dt class="etiquetas__item">Etiqueta de cierre:</dt>
           <dd>Marca el final de nuestra etiqueta.</dd>
-          <dt>Elemento</dt>
+          <dt class="etiquetas__item">Elemento</dt>
           <dd>
             La etiqueta en sí, desde principio a fin, incluyendo atributos,
             valor, contenido, etc...
           </dd>
         </dl>
-        <figure>
-          <img src="./img/etiquetaest.png" alt="estructura de una etiqueta" />
+        <figure class="img">
+          <img src="./img/etiquetaest.png" alt="estructura de una etiqueta"  class="etiquetas__img"/>
         </figure>
-        <h3>Tipos de elementos en etiquetas:</h3>
-        <dl>
-          <dt>Block:</dt>
+        <h3 class="encabezado3 elementos__encabezado">Tipos de elementos en etiquetas:</h3>
+        <dl class="elementos__list">
+          <dt class="elementos__item">Block:</dt>
           <dd>
             Un elemento en bloque ocupa todo el espacio de su elemento padre
             (contenedor), creando así un "bloque".
           </dd>
-          <figure>
-            <img src="./img/ejemploblock.png" alt="Ejemplo elemento block" />
-            <img src="./img/ejemploblock2.png" alt="Ejemlpo elemento block" />
+          <figure class="img">
+            <img src="./img/ejemploblock.png" alt="Ejemplo elemento block" class="block__img"/>
+            <img src="./img/ejemploblock2.png" alt="Ejemlpo elemento block" class="block__img"/>
           </figure>
-          <dt>Inline:</dt>
+          <dt class="elementos__item">Inline:</dt>
           <dd>
             Un elemento en línea ocupa sólo el espacio delimitado por las
             etiquetas que definen el elemento en línea.
           </dd>
-          <figure>
-            <img src="./img/ejemploinline.png" alt="Ejemplo elemento inline" />
-            <img src="./img/ejemploinline2.png" alt="Ejemplo elemento inline" />
+          <figure class="img">
+            <img src="./img/ejemploinline.png" alt="Ejemplo elemento inline" class="inline__img"/>
+            <img src="./img/ejemploinline2.png" alt="Ejemplo elemento inline" class="inline__img"/>
           </figure>
         </dl>
       </section>
-      <section>
+      <section class="imagenes">
         <a name="imagenes"></a>
-        <h2>Imágenes:</h2>
-        <dl>
-          <dt>Lossless:</dt>
+        <h2 class="encabezado2 imagenes__encabezado">Imágenes:</h2>
+        <dl class="imagenes__list">
+          <dt class="imagenes__item">Lossless:</dt>
           <dd>
             No tendrá ninguna pérdida al intentar comprimirla. Mejores usos:
             GIF, PNG 8 (logos). PNG 24 (fotografías sin fondo). GIF y PNG 8
             están limitados a 256 colores, por eso es que su peso es bajo. PNG
             24 uso de colores prácticamente ilimitada, pero pesa más
           </dd>
-          <dt>Lossy:</dt>
+          <dt class="imagenes__item">Lossy:</dt>
           <dd>
             Tienen perdida al comprimirlas. Mejores usos: para fotografías
             completas. JPG / JPEG Pierde calidad al comprimir pero se pierde
             peso, lo que beneficia al rendimiento de nuestra web.
           </dd>
-          <dt>SVG - Vector/Lossless:</dt>
+          <dt class="imagenes__item">SVG - Vector/Lossless:</dt>
           <dd>
             Tipo de formato especial generado con programas de edición de
             imágenes, muy ligero, diseñado especialmente para pantallas de
@@ -155,48 +179,48 @@
             nuevo formato de pantalla).
           </dd>
         </dl>
-        <figure>
-          <img src="./img/tablaimg.png" alt="tabla de imagenes" />
+        <figure class="img">
+          <img src="./img/tablaimg.png" alt="tabla de imagenes" class="imagenes__img"/>
         </figure>
       </section>
-      <section>
+      <section class="formularios">
         <a name="formularios"></a>
-        <h2>Formularios:</h2>
-        <p>
+        <h2 class="encabezado2 formularios__encabezado">Formularios:</h2>
+        <p class="parrafo formularios__parrafo">
           Un formulario HTML es una sección de un documento que contiene
           contenido normal, código, elementos especiales llamados controles
           (casillas de verificación (checkboxes), radiobotones (radio buttons),
           menúes, etc.), y rótulos (labels) en esos controles.
         </p>
-        <p>
+        <p  class="parrafo formularios__parrafo">
           Usos sugeridos: Para aumentar el area de click, puedes usar la
           etiqueta &lt;label&gt;, esto hará que al dar click sobre el contenido
           de esta etiqueta, la casilla se marque. Conveniente para personas con
           baja capacidad visual.
         </p>
-        <p>Ejemplo:</p>
-        <form action="">
-          <label for="ejemplo1">Texto que aplica cambios.</label>
+        <p class="parrafo formularios__parrafo">Ejemplo (Click al texto):</p>
+        <form action="" class="botones">
+          <label for="ejemplo1" class="parrafo formularios__parrafo">Texto que aplica cambios.</label>
           <input type="radio" id="ejemplo1" name="ejemplo1" />
-          <span>Texto que no aplica cambios:</span
+          <span class="parrafo formularios__parrafo">Texto que no aplica cambios:</span
           ><input type="radio" id="ejemplo2" name="ejemplo1" />
         </form>
       </section>
-      <section>
-        <h2>Anclas:</h2>
-        <p>
+      <section class="anclas">
+        <h2 class="encabezado2 anclas__encabezado">Anclas:</h2>
+        <p class="parrafo anclas__parrafo">
           Vínculos que al ser presionados te llevan a cierta sección de la
           página o de otras páginas.
         </p>
-        <p>Ejemplo en misma página:</p>
+        <p class="parrafo anclas__parrafo">Ejemplo en misma página:</p>
+        <figure class="img">
+          <img src="./img/ejemploancla1.png" alt="Ejemplo de ancla" class="anclas__img"/>
+        </figure class="img">
+        <p class="parrafo anclas__parrafo">Ejemplo en página externa:</p>
         <figure>
-          <img src="./img/ejemploancla1.png" alt="Ejemplo de ancla" />
+          <img src="./img/ejemploancla2.png" alt="Ejemplo de ancla" class="anclas__img"/>
         </figure>
-        <p>Ejemplo en página externa:</p>
-        <figure>
-          <img src="./img/ejemploancla2.png" alt="Ejemplo de ancla" />
-        </figure>
-        <p>
+        <p class="parrafo anclas_parrafo">
           El Atributo href sirve para indicar a que lugar de la página queremos
           ir (Equivalente a "quiero ir a:"). El atributo name es una marca que
           le sirve al atributo href para saber a que lugar de la página llegar
