@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complemento para HTML & CSS</title>
+    <link rel="stylesheet" href="../CSS/home.css" />
+    <link
+      rel="stylesheet"
+      href="../CSS/home-mobile.css"
+      media="screen and (min-width: 320px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../CSS/home-tablet.css"
+      media="screen and (min-width: 600px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../CSS/home-desktop.css"
+      media="screen and (min-width: 1200px)"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="introduccion">
+        <h1 class="encabezado introduccion__encabezado">Antes de empezar...</h1>
+        <p class="parrafo introduccion__parrafo">
+          Esta página busca complementar lo aprendido en el
+          <a href="https://platzi.com/cursos/html-css/" target="_blank"
+            >curso definitivo de CSS y HTML</a
+          >
+          encontrado en
+          <a href="https://platzi.com/" target="_blank">Platzi.</a> Además de
+          ciertos apuntes, tips o cualquier cosa que pueda ayudarte a entender
+          mejor lo que estamos aprendiendo.
+        </p>
+      </section>
+      <div class="middle">
+        <section class="htmlcss">
+          <div class="htmlcss__texto">
+            <h2 class="encabezado2 htmlcss__encabezado">
+              ¿Qué significa HTML & CSS?
+            </h2>
+            <p class="parrafo htmlcss__parrafo">
+              HTML viene del inglés Hypertext markup language, básicamente el
+              “esqueleto” de la página en sí, las bases. CSS por su parte viene
+              del inglés Cascade Style Sheet y es básicamente la apariencia de
+              la página.
+            </p>
+          </div>
+          <figure class="img">
+            <img
+              src="../img/htmlcss.png"
+              alt="htmlcss"
+              class="introduccion__img"
+            />
+            <figcaption>Anatomía de una página web.</figcaption>
+          </figure>
+        </section>
+        <section class="herramientas">
+          <h3 class="encabezado3 herramientas__encabezado">
+            Herramientas que podrían ayudarte.
+          </h3>
+          <dl class="herramientas__lista">
+            <dt class="herramientas__item">
+              <a
+                href="https://www.w3schools.com/TAgs/default.asp"
+                target="_blank"
+                >Etiquetas:</a
+              >
+            </dt>
+            <dd>Listado de etiquetas HTML.</dd>
+            <dt class="herramientas__item">
+              <a href="https://mediaqueri.es/" target="_blank">Mediaqueri:</a>
+            </dt>
+            <dd>
+              Algunas ideas sobre como deberíamos implementar el diseño
+              responsive en nuestro sitio.
+            </dd>
+            <dd>
+              Hint: Diseño responsive significa darle a nuestra página armonía
+              con todo tipo de dispositivos, de tál forma que, por ejemplo, al
+              abrirla desde un celular o una computadora, sea igual de
+              entendible en ambas.
+            </dd>
+            <dt class="herramientas__item">
+              <a href="https://coolors.co/palettes/trending" target="_blank"
+                >Coolors:</a
+              >
+            </dt>
+            <dd>Paletas de colores.</dd>
+            <dt class="herramientas__item">
+              <a href="https://unsplash.com/" target="_blank">Unsplash:</a>
+            </dt>
+            <dd>Imágenes sin derechos de autor.</dd>
+            <dt class="herramientas__item">
+              <a href="https://coverr.co/" target="_blank">Coverr:</a>
+            </dt>
+            <dd>Vídeos sin derechos de autor.</dd>
+            <dt class="herramientas__item">
+              <a href="https://www.fontpair.co/" target="_blank">FontPair:</a>
+            </dt>
+            <dd>Ver cuales fuentes puedes combinar.</dd>
+            <dt class="herramientas__item">
+              <a href="https://icons8.com/" target="_blank">Icons8:</a>
+            </dt>
+            <dd>Iconos, vectores, música y algunos recursos más…</dd>
+            <dt class="herramientas__item">
+              <a href="https://fonts.google.com/" target="_blank"
+                >Google Fonts:</a
+              >
+            </dt>
+            <dd>Obtener fuentes.</dd>
+            <dt class="herramientas__item">
+              <a href="https://tinypng.com/" target="_blank">Tiny PNG:</a>
+            </dt>
+            <dd>
+              Comprime el tamaño de una o mas imagenes, para hacerla más
+              ligeras.
+            </dd>
+            <dt class="herramientas__item">
+              <a href="https://www.verexif.com/" target="_blank">Verefix:</a>
+            </dt>
+            <dd>
+              Elimina los metadatos de una imagen, para reducir su tamaño.
+            </dd>
+          </dl>
+          <h3 class="encabezado3 documentacion__encabezado">Documentación.</h3>
+          <dl class="documentacion__lista">
+            <dt class="documentacion__item">
+              <a href="https://cssreference.io/" target="_blank">CSS:</a>
+            </dt>
+            <dd>Guía visual de CSS, aprende con el ejemplo.</dd>
+            <dt class="documentacion__item">
+              <a href="https://htmlreference.io/" target="_blank">HTML:</a>
+            </dt>
+            <dd>Guía de HTML, aprende con el ejemplo.</dd>
+            <dt class="documentacion__item">
+              <a href="https://unsplash.com/" target="_blank">Browserdiet:</a>
+            </dt>
+            <dd>Optimizar sitios web.</dd>
+            <dd>
+              Hint: ¿Qué significa optimizar un sitio web? Al crear un sitio web
+              este debe ser lo mas liviano posible, buscando que al cargar la
+              página, sea de forma uniforme, sin tirones, etc...
+            </dd>
+          </dl>
+          <h3 class="encabezado3 juegos__encabezado">Practica jugando.</h3>
+          <dl class="juegos__lista">
+            <dt class="juegos__item">
+              <a href="https://cssgridgarden.com/#es" target="_blank"
+                >Grid Layout:</a
+              >
+            </dt>
+            <dd>Un juego para aprender CSS grid</dd>
+            <dt class="juegos__item">
+              <a href="https://flexboxfroggy.com/#es" target="_blank"
+                >Grid Layout:</a
+              >
+            </dt>
+            <dd>Un juego para aprender CSS flexbox</dd>
+          </dl>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

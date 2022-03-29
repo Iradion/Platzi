@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./HTML.css" />
+    <link rel="stylesheet" href="../CSS/HTML.css" />
     <title>HTML</title>
   </head>
   <body>
     <main>
       <div class="inicio">
-        <figure>
+        
           <h1 class="encabezado inicio__encabezado">
-            HTML<img
-              src="./icons/html-icon.png"
+            HTML
+          </h1><figure><img
+              src="../icons/html-icon.png"
               alt="html icon"
-              class="inicio__icon"
+              class="html__icon"
             />
-          </h1>
         </figure>
       </div>
       <section class="indice">
@@ -75,7 +75,7 @@
         </dl>
         <figure class="img">
           <img
-            src="./img/anatomiaweb.png"
+            src="../img/anatomiaweb.png"
             alt="anatomiaweb"
             class="anatomia__img"
           />
@@ -128,7 +128,7 @@
           </dd>
         </dl>
         <figure class="img">
-          <img src="./img/etiquetaest.png" alt="estructura de una etiqueta"  class="etiquetas__img"/>
+          <img src="../img/etiquetaest.png" alt="estructura de una etiqueta"  class="etiquetas__img"/>
         </figure>
         <h3 class="encabezado3 elementos__encabezado">Tipos de elementos en etiquetas:</h3>
         <dl class="elementos__list">
@@ -138,8 +138,8 @@
             (contenedor), creando así un "bloque".
           </dd>
           <figure class="img">
-            <img src="./img/ejemploblock.png" alt="Ejemplo elemento block" class="block__img"/>
-            <img src="./img/ejemploblock2.png" alt="Ejemlpo elemento block" class="block__img"/>
+            <img src="../img/ejemploblock.png" alt="Ejemplo elemento block" class="block__img"/>
+            <img src="../img/ejemploblock2.png" alt="Ejemlpo elemento block" class="block__img"/>
           </figure>
           <dt class="elementos__item">Inline:</dt>
           <dd>
@@ -147,8 +147,8 @@
             etiquetas que definen el elemento en línea.
           </dd>
           <figure class="img">
-            <img src="./img/ejemploinline.png" alt="Ejemplo elemento inline" class="inline__img"/>
-            <img src="./img/ejemploinline2.png" alt="Ejemplo elemento inline" class="inline__img"/>
+            <img src="../img/ejemploinline.png" alt="Ejemplo elemento inline" class="inline__img"/>
+            <img src="../img/ejemploinline2.png" alt="Ejemplo elemento inline" class="inline__img"/>
           </figure>
         </dl>
       </section>
@@ -180,7 +180,7 @@
           </dd>
         </dl>
         <figure class="img">
-          <img src="./img/tablaimg.png" alt="tabla de imagenes" class="imagenes__img"/>
+          <img src="../img/tablaimg.png" alt="tabla de imagenes" class="imagenes__img"/>
         </figure>
       </section>
       <section class="formularios">
@@ -196,15 +196,14 @@
           Usos sugeridos: Para aumentar el area de click, puedes usar la
           etiqueta &lt;label&gt;, esto hará que al dar click sobre el contenido
           de esta etiqueta, la casilla se marque. Conveniente para personas con
-          baja capacidad visual.
-        </p>
+          baja capacidad visual. Esto también se puede hacer con los atributos For y ID en las etiquetas anteriormente mencionadas.
         <p class="parrafo formularios__parrafo">Ejemplo (Click al texto):</p>
         <form action="" class="botones">
-          <label for="ejemplo1" class="parrafo formularios__parrafo">Texto que aplica cambios.</label>
-          <input type="radio" id="ejemplo1" name="ejemplo1" />
-          <span class="parrafo formularios__parrafo">Texto que no aplica cambios:</span
-          ><input type="radio" id="ejemplo2" name="ejemplo1" />
+          <label><span class="parrafo formularios__parrafo">Texto que aplica cambios.</span><input type="radio" name="ejemplo1" /></label>          
+          <label><span class="parrafo formularios__parrafo">Texto que no aplica cambios:</span></label
+          ><input type="radio" name="ejemplo1" />
         </form>
+        <p class="parrafo formularios__parrafo"> En la etiqueta Input, el atributo Name sirve para darle un nombre en si a la etiqueta en cuestion, de tal forma que al enviar a una base de datos nuestro formulario, estas etiquetas vayan con su nombre correspondiente y las respuestas que el usuario haya dejado.</p>
       </section>
       <section class="anclas">
         <h2 class="encabezado2 anclas__encabezado">Anclas:</h2>
@@ -214,11 +213,11 @@
         </p>
         <p class="parrafo anclas__parrafo">Ejemplo en misma página:</p>
         <figure class="img">
-          <img src="./img/ejemploancla1.png" alt="Ejemplo de ancla" class="anclas__img"/>
+          <img src="../img/ejemploancla1.png" alt="Ejemplo de ancla" class="anclas__img"/>
         </figure class="img">
         <p class="parrafo anclas__parrafo">Ejemplo en página externa:</p>
         <figure>
-          <img src="./img/ejemploancla2.png" alt="Ejemplo de ancla" class="anclas__img"/>
+          <img src="../img/ejemploancla2.png" alt="Ejemplo de ancla" class="anclas__img"/>
         </figure>
         <p class="parrafo anclas_parrafo">
           El Atributo href sirve para indicar a que lugar de la página queremos

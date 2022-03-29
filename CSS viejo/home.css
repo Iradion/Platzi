@@ -1,10 +1,9 @@
 @font-face {
   font-family: epilogue;
-  src: url(./Fonts/Epilogue/Epilogue-VariableFont_wght.ttf);
+  src: url(../Fonts/Epilogue/Epilogue-VariableFont_wght.ttf);
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -14,12 +13,13 @@ html {
   font-family: epilogue;
   background: #1c3139;
   color: whitesmoke;
-  padding: 0 30rem;
+  width: 80%;
+  min-width: 393;
+  min-height: 873;
 }
-
 .introduccion {
   text-align: center;
-  padding: 0 17rem;
+  padding: 0 auto;
 }
 .encabezado {
   font-size: 5rem;
@@ -37,19 +37,11 @@ html {
   height: auto;
   margin: 1rem;
 }
-.introduccion__img {
-  margin: 1rem;
-  width: auto;
-  height: auto;
-}
 .parrafo a {
   text-decoration: none;
   color: #09a6f3;
 }
-.htmlcss {
-  margin: 1rem;
-  text-align: left;
-}
+
 .encabezado2 {
   font-size: 3rem;
 }
@@ -59,7 +51,12 @@ html {
   padding-top: 6rem;
 }
 .htmlcss__parrafo {
-  margin: 1rem;
+  width: 50%;
+  height: auto;
+}
+.introduccion__img {
+  width: 50%;
+  height: auto;
 }
 .encabezado3 {
   font-size: 2rem;
@@ -100,9 +97,4 @@ html {
 .juegos__item {
   font-size: 2rem;
   margin: 1rem 0 0;
-}
-
-.img {
-  float: right;
-  margin-top: 5rem;
 }

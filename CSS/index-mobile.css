@@ -1,0 +1,52 @@
+header {
+  width: 100vw;
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  width: 100vw;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+}
+footer {
+  width: 95vw;
+  height: 6vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__logo {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+}
+.navbar {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  justify-content: flex-end;
+}
+.navbar--main {
+  width: 80vw;
+  height: auto;
+  border-radius: 1rem 0 0 1rem;
+  padding: 0.5rem;
+  flex-flow: row wrap;
+}
+.navbar__icon {
+  width: 1.8rem;
+}
+.iframe {
+  width: 100vw;
+  max-width: 40rem;
+  height: auto;
+}
+.footer__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+footer span {
+    display:block;
+    text-align: end;
+}

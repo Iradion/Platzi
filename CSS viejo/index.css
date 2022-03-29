@@ -1,6 +1,6 @@
 @font-face {
   font-family: epilogue;
-  src: url(./Fonts/Epilogue/Epilogue-VariableFont_wght.ttf);
+  src: url(../Fonts/Epilogue/Epilogue-VariableFont_wght.ttf);
 }
 * {
   box-sizing: border-box;
@@ -8,25 +8,26 @@
   padding: 0;
 }
 html {
-  font-size: 62.5%;
   background: #1c3139;
+  font-size: 62.5%;
   font-family: epilogue;
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
+  min-width: 393;
+  min-height: 873;
 }
 .navbar {
   font-weight: 100;
   font-size: 2.6rem;
-  background: #253e45;
-  margin: 0 35rem;
-  border-radius: 8px;
 }
-.navbar__main {
-  width: auto;
-  height: auto;
+.navbar__main {  
+  background: #253e45;
   text-align: center;
-  margin: 1rem 0 0;
-  padding: 3rem 0rem;
+  width: 65%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 3rem 0;
 }
 /* .logo {
 }
@@ -39,13 +40,15 @@ html {
   display: inline-block;
 }
 .navbar__icon {
-  width: auto;
-  height: auto;
+  width: 20rem;
+  height: 20rem;
 }
 .navbar__item a {
   color: whitesmoke;
   text-decoration: none;
+  display: inline-block;
   padding: 3rem 11rem;
+
 }
 .navbar__item a:hover {
   background-color: #2a454b;
@@ -56,9 +59,11 @@ html {
   color: #0e1c26;
 }
 .iframe {
+  box-sizing: border-box;
   border: 0;
-  width: 100%;
-  height: 75rem;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
 }
 /* .icon {
 } */
@@ -72,7 +77,7 @@ html {
   margin-top: 1rem;
   padding: 0 auto;
   color: whitesmoke;
-  text-align:right;
+  text-align: right;
 }
 .footer__icon {
   width: auto;

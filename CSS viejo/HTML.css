@@ -1,6 +1,6 @@
 @font-face {
   font-family: epilogue;
-  src: url(./Fonts/Epilogue/Epilogue-VariableFont_wght.ttf);
+  src: url(../Fonts/Epilogue/Epilogue-VariableFont_wght.ttf);
 }
 * {
   box-sizing: border-box;
@@ -12,8 +12,6 @@ html {
   font-family: epilogue;
   background: #1c3139;
   color: whitesmoke;
-  margin: 0;
-  padding: 0 15rem;
 }
 .encabezado {
   font-size: 5rem;
@@ -22,7 +20,8 @@ html {
   text-align: center;
   margin: 1rem;
 }
-.inicio__icon {
+.html__icon {
+  display: inline-block;
   width: 4rem;
   height: auto;
 }
@@ -41,13 +40,13 @@ html {
   border-radius: 8px;
 }
 .navbar__indice {
-  text-align: center;
   width: auto;
   height: auto;
   margin: 1rem;
 }
 .navbar__item {
   list-style: none;
+  text-align: center;
   display: block;
   width: auto;
   height: auto;

@@ -1,0 +1,60 @@
+header {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  width: 100vw;
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+}
+footer {
+  width: 95vw;
+  height: 8vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__logo {
+  width: 3rem;
+  height: 3rem;
+  margin: 2rem 1rem;
+}
+header span::before {
+  content: "Iradion";
+  color: var(--font-color);
+  font-size: var(--text-size);
+  position: absolute;
+  left: 4.2rem;
+  top: 2.7rem;
+}
+.navbar {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  justify-content: flex-end;
+}
+.navbar--main {
+  width: 80vw;
+  height: auto;
+  border-radius: 1rem 0 0 1rem;
+  padding: 0.5rem;
+  flex-flow: row wrap;
+}
+.navbar__icon {
+  width: 1.8rem;
+}
+.iframe {
+  width: 100vw;
+  max-width: 75rem;
+  height: auto;
+}
+.footer__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+footer span {
+  display: block;
+  text-align: end;
+}

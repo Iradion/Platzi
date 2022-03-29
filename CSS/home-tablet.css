@@ -1,0 +1,69 @@
+.encabezado {
+  font-size: var(--h1-size);
+}
+.introduccion__encabezado {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+.parrafo {
+  font-size: var(--text-size);
+}
+.introduccion__parrafo {
+  margin: 0.5rem 0;
+}
+.introduccion__parrafo a {
+  color: var(--url-color);
+  text-decoration: none;
+}
+.parrafo a:hover {
+  color: aqua;
+}
+.encabezado2 {
+  font-size: var(--h2-size);
+}
+.htmlcss {
+  display: flex;
+}
+.htmlcss__texto {
+  margin: 0 0 0 0;
+}
+.htmlcss__encabezado {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+.htmlcss__parrafo {
+  width: 40vw;
+  margin: 0.5rem 0;
+}
+.introduccion__img {
+  width: 40vw;
+  height: auto;
+}
+.encabezado3 {
+  font-size: var(--h3-size);
+}
+.herramientas__item {
+  font-size: var(--text-size);
+}
+.herramientas__item a {
+  color: var(--url-color);
+  text-decoration: none;
+}
+dd {
+  font-size: var(--text-size);
+}
+.documentacion__lista {
+  font-size: var(--text-size);
+}
+.documentacion__item a {
+  color: var(--url-color);
+  text-decoration: none;
+}
+.juegos__lista {
+  font-size: var(--text-size);
+  margin: 0 0 1rem 0;
+}
+.juegos__item a {
+  color: var(--url-color);
+  text-decoration: none;
+}

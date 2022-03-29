@@ -1,66 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="./favicon.png" />
     <title>Complemento para HTML & CSS</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link
+      rel="stylesheet"
+      href="./CSS/index-mobile.css"
+      media="screen and (min-width: 320px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./CSS/index-tablet.css"
+      media="screen and (min-width: 600px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./CSS/index-desktop.css"
+      media="screen and (min-width: 1200px)"
+    />
   </head>
   <body>
     <header>
+      <img src="./img/iradion.png" alt="Header logo" class="header__logo">
+      <span></span>
       <nav class="navbar">
-        <!-- <figure class="logo">
-          <img
-            src="./img/Iradion-logo.png"
-            alt="navbar logo"
-            class="navbar__logo"
-          />
-          <figcaption style="text-align: center">Iradion</figcaption>
-        </figure> -->
-        <ul class="navbar__main">
+        <ul class="navbar--main">
           <li class="navbar__item">
-            <figure class="icon">
-              <a href="./home.html" target="iframe"
-                ><img
-                  class="navbar__icon"
-                  src="./icons/home-icon.png"
-                  alt="Home icon"
-              /></a>
-            </figure>
+            <a href="./HTML/home.html" target="iframe"
+              ><img
+                class="navbar__icon"
+                src="./icons/home-icon.png"
+                alt="Home icon"
+            /></a>
           </li>
           <li class="navbar__item">
-            <figure>
-              <a href="./HTML.html" target="iframe"
-                >HTML<img
-                  class="navbar__icon"
-                  src="./icons/html-icon.png"
-                  alt="HTML icon"
-              /></a>
-            </figure>
+            <a href="./HTML/HTML.html" target="iframe"
+              >HTML
+              <img
+                class="navbar__icon"
+                src="./icons/html-icon.png"
+                alt="HTML icon"
+            /></a>
           </li>
           <li class="navbar__item">
-            <figure>
-              <a href="./CSS.html" target="iframe"
-                >CSS<img
-                  class="navbar__icon"
-                  src="./icons/css-icon.png"
-                  alt="CSS icon"
-              /></a>
-            </figure>
+            <a href="./HTML/CSS.html" target="iframe"
+              >CSS<img
+                class="navbar__icon"
+                src="./icons/css-icon.png"
+                alt="CSS icon"
+            /></a>
           </li>
           <li class="navbar__item">
-            <figure>
-              <a href="https://github.com/" target="_blank"
-                >Git<img
-                  class="navbar__icon"
-                  src="./icons/git-icon.png"
-                  alt="Github icon" />&nbsp;&nbsp;<img
-                  class="navbar__icon"
-                  src="./icons/external-icon.png"
-                  alt="External icon"
-              /></a>
-            </figure>
+            <a href="https://github.com/" target="_blank"
+              >Git<img
+                class="navbar__icon"
+                src="./icons/git-icon.png"
+                alt="Github icon" />&nbsp;<img
+                class="navbar__icon"
+                src="./icons/external-icon.png"
+                alt="External icon"
+            /></a>
           </li>
         </ul>
       </nav>
@@ -68,7 +71,7 @@
     <main>
       <iframe
         class="iframe"
-        src="./home.html"
+        src="./HTML/home.html"
         frameborder="0"
         scrolling="true"
         name="iframe"
@@ -78,16 +81,9 @@
       <div class="footer__info">
         <address>
           Dudas, consejos, correcciones:
-          <figure class="icon">
-            <a
-              href="https://github.com/Iradion/Platzi/issues/new"
-              target="_blank"
-              ><img
-                src="./icons/about.png"
-                alt="About icon"
-                class="footer__icon"
-            /></a>
-          </figure>
+          <a href="https://github.com/Iradion/Platzi/issues/new" target="_blank"
+            ><img src="./icons/about.png" alt="About icon" class="footer__icon"
+          /></a>
           <span>Iradion 2022.</span>
         </address>
       </div>

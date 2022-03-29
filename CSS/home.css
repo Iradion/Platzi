@@ -1,0 +1,38 @@
+@font-face {
+  font-family: epilogue;
+  src: url(../Fonts/Epilogue/Epilogue-VariableFont_wght.ttf);
+}
+:root {
+  --color-one: #1c3139;
+  --color-two: #253e45;
+  --color-three: #2a454b;
+  --color-four: #21373f;
+  --color-five: #0e1c26;
+  --font-color: #e5e5e5;
+  --url-color: #09a6f3;
+  --h1-size: 2.6rem;
+  --h2-size: 2rem;
+  --h3-size: 1.8rem;
+  --text-size: 1.6rem;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: epilogue;
+  color: var(--font-color);
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+  background: var(--color-four);
+}
+body {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 2rem 0;
+}

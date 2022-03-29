@@ -1,0 +1,78 @@
+header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+main {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+}
+footer {
+  font-size: 1.2rem;
+  width: 95vw;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items:flex-start;
+}
+.header__logo {
+  width: 5rem;
+  height: 5rem;
+  margin: 2rem 1rem;
+  position: absolute;
+  left: 1rem;
+}
+header span::before {
+  content: "Iradion";
+  color: var(--font-color);
+  font-size: 2.2rem;
+  position: absolute;
+  left: 7.2rem;
+  top: 3.6rem;
+}
+.navbar {
+  font-size: 2.2rem;
+  margin: 1rem 0;
+}
+.navbar--main {
+  width: 40vw;
+  height: auto;
+  border-radius: 1rem;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.navbar__item {
+  text-align: center;
+}
+.navbar__item a {
+  display: inline-block;
+  width: 10vw;
+  padding: 2.4rem 0;
+}
+.navbar__item:nth-child(1) a:hover {
+  border-radius: 1rem 0 0 1rem;
+}
+.navbar__item:nth-child(4) a:hover {
+  border-radius: 0 1rem 1rem 0;
+}
+.navbar__icon {
+  width: 2rem;
+}
+.iframe {
+  width: 100vw;
+  height: 80vh;
+  max-width: 100vw;
+}
+.footer__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+footer span {
+  display: block;
+  text-align: end;
+}
